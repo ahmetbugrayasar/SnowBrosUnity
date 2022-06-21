@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c1f7b7cb0c698a40b78a25778209956
+guid: 4e1384db12b40c84f852e20934402888
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -140,13 +140,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Moss_Walk_0
+      name: Street_Lamp_walk_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 48
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1390cf112708fc34083edf866225ad34
-      internalID: 1099669441
+      spriteID: d77d50f55b4e44746867aeb5ae1a4a10
+      internalID: -236467880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moss_Walk_1
+      name: Street_Lamp_walk_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 0
-        width: 48
-        height: 48
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaeb99cea7cd3a243ad3e68c3d1be9ef
-      internalID: 441285324
+      spriteID: 83cf58b4385944d4c8a973635dc12388
+      internalID: -1690132190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moss_Walk_2
+      name: Street_Lamp_walk_2
       rect:
         serializedVersion: 2
-        x: 96
+        x: 128
         y: 0
-        width: 48
-        height: 48
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,41 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fda06e48c5cc254d9f0ab73aeed7c8a
-      internalID: -2093354474
+      spriteID: 6e6ffcee4923b3b40922603440832f27
+      internalID: -961061122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moss_Walk_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7548344a0d0e5264d925b25fcd3bd67e
-      internalID: -1795513690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Moss_Walk_4
+      name: Street_Lamp_walk_3
       rect:
         serializedVersion: 2
         x: 192
         y: 0
-        width: 48
-        height: 48
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e95a5e4b092c724db898590a1680c60
-      internalID: 741199859
+      spriteID: 47737f900f04627429a2255cdf6d632e
+      internalID: -786997917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moss_Walk_5
+      name: Street_Lamp_walk_4
       rect:
         serializedVersion: 2
-        x: 240
+        x: 256
         y: 0
-        width: 48
-        height: 48
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +238,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aba752df9e5688d4e9a023d6110aa291
-      internalID: 1473153116
+      spriteID: de10079ab69414445a29245b73645aa6
+      internalID: 170824932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moss_Walk_6
+      name: Street_Lamp_walk_5
       rect:
         serializedVersion: 2
-        x: 288
+        x: 320
         y: 0
-        width: 48
-        height: 48
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf2d0f9b880826a42ab54ec9e464f402
-      internalID: 1440555920
+      spriteID: f27220306b4e6414c8aaf5bbd4fad150
+      internalID: -1658553484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moss_Walk_7
+      name: Street_Lamp_walk_6
       rect:
         serializedVersion: 2
-        x: 336
+        x: 384
         y: 0
-        width: 48
-        height: 48
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,8 +280,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94508e43a72b6444da4785ef4918742a
-      internalID: 1706032322
+      spriteID: 1676678e354c40847bc6092e0d564925
+      internalID: 1700183053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Street_Lamp_walk_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f207baec8b30eed488b96755810dfa83
+      internalID: -528284365
       vertices: []
       indices: 
       edges: []
@@ -318,14 +318,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Moss_Walk_4: 741199859
-      Moss_Walk_7: 1706032322
-      Moss_Walk_0: 1099669441
-      Moss_Walk_6: 1440555920
-      Moss_Walk_1: 441285324
-      Moss_Walk_2: -2093354474
-      Moss_Walk_3: -1795513690
-      Moss_Walk_5: 1473153116
+      Street_Lamp_walk_1: -1690132190
+      Street_Lamp_walk_7: -528284365
+      Street_Lamp_walk_6: 1700183053
+      Street_Lamp_walk_4: 170824932
+      Street_Lamp_walk_2: -961061122
+      Street_Lamp_walk_0: -236467880
+      Street_Lamp_walk_5: -1658553484
+      Street_Lamp_walk_3: -786997917
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

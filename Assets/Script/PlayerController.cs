@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public float checkRadius;
     public LayerMask whatIsGround;
 
+    private Animator anim;
 
     private Rigidbody2D rb;
 
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
     private void FixedUpdate()
@@ -36,6 +38,8 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
         moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+
+        
 
         /* FLIP
          * If the object is looking left and moving right
@@ -50,17 +54,22 @@ public class PlayerController : MonoBehaviour
     {
         if(isGrounded == true)
         {
+            anim.SetBool("isJumping",false);
             extraJump = jumpValue;
         }
         if((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && extraJump > 0)
         {
-            rb.velocity = Vector2.up * jumpForce;
+            
+            anim.SetBool("isJumping", true);
+            StartCoroutine(JumpStart());
             extraJump -= 1;
 
         }
         else if((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))&& extraJump == 0 && isGrounded == true)
         {
-            rb.velocity = Vector2.up * jumpForce;
+            
+             anim.SetBool("isJumping", true);
+            StartCoroutine(JumpStart());
 
         }
     }
@@ -78,6 +87,8 @@ public class PlayerController : MonoBehaviour
         Scaler.x *= -1;
         transform.localScale = Scaler;
     }
+
+
     IEnumerator JumpStart()
     {
         Debug.Log("JumpStart");
