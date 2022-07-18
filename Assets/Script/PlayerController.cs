@@ -2,29 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : GeneralMovement
 {
-    public float speed;
-    public float jumpForce;
+
     private float moveInput;
-    
-    //Checks player direction, if right => player is going right
-    private bool right = true;
 
     //Checks if player is standing on the ground
     private bool isGrounded = true;
-    public Transform groundCheck;
+    
     public float checkRadius;
     public LayerMask whatIsGround;
 
     private Animator anim;
 
-    private Rigidbody2D rb;
-
-    //For Double jump or more
-    private int extraJump;
-    public int jumpValue;
-    public float jumpTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -54,13 +44,13 @@ public class PlayerController : MonoBehaviour
     {
         if(isGrounded == true)
         {
-            anim.SetBool("isJumping",false);
+            //anim.SetBool("isJumping",false);
             extraJump = jumpValue;
         }
         if((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && extraJump > 0)
         {
             
-            anim.SetBool("isJumping", true);
+            //anim.SetBool("isJumping", true);
             StartCoroutine(JumpStart());
             extraJump -= 1;
 
@@ -68,32 +58,10 @@ public class PlayerController : MonoBehaviour
         else if((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))&& extraJump == 0 && isGrounded == true)
         {
             
-             anim.SetBool("isJumping", true);
+            //anim.SetBool("isJumping", true);
             StartCoroutine(JumpStart());
 
         }
     }
 
-    /*
-     * Inverses the right boolean
-     * Gets the local scale of player object to Scaler
-     * Multiplies the x of Scaler by -1
-     * Equalizes object scale to Scaler (which the x of is multiplied by -1)
-     */
-    void Flip()
-    {
-        right = !right;
-        Vector3 Scaler = transform.localScale;
-        Scaler.x *= -1;
-        transform.localScale = Scaler;
-    }
-
-
-    IEnumerator JumpStart()
-    {
-        Debug.Log("JumpStart");
-        yield return new WaitForSeconds(jumpTimer);
-        rb.velocity = Vector2.up * jumpForce;
-        Debug.Log("JumpEnd");
-    }
 }

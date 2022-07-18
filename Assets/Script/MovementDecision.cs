@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
-public class FlyingDecision : MonoBehaviour
+public class MovementDecision : MonoBehaviour
 {
     public Transform player;
     public Transform goTransform;
@@ -10,7 +10,7 @@ public class FlyingDecision : MonoBehaviour
     private Vector3 goPosition;
     private float distance;
     [SerializeField]
-    [Range(0,20)]
+    [Range(0, 20)]
     public float distanceThreshold = 10;
     // Start is called before the first frame update
     void Start()
@@ -23,11 +23,11 @@ public class FlyingDecision : MonoBehaviour
         plPosition = player.position;
         goPosition = transform.position;
         distance = Vector3.Distance(plPosition, goPosition);
-        if(distance < distanceThreshold)
+        if (distance < distanceThreshold)
         {
             Debug.Log("Distance is lower than distance Threshold");
             gameObject.GetComponent<AIPath>().enabled = true;
-            gameObject.GetComponent <AIPatrol> ().enabled = false;
+            gameObject.GetComponent<AIPatrol>().enabled = false;
         }
         else
         {
@@ -36,11 +36,4 @@ public class FlyingDecision : MonoBehaviour
             gameObject.GetComponent<AIPatrol>().enabled = true;
         }
     }
-    // Update is called once per frame
-    void Update()
-    {
-
-      
-    }
-
 }
