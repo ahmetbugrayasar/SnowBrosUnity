@@ -11,6 +11,9 @@ public class FlyingDecision : MonoBehaviour
     private float distance;
     private float hdistance;
     private float vdistance;
+
+
+    public TMPro.TextMeshPro statusText;
     [SerializeField]
     [Range(0,20)]
     public float distanceThreshold = 10;
@@ -29,22 +32,20 @@ public class FlyingDecision : MonoBehaviour
         vdistance = Mathf.Abs(plPosition.y - goPosition.y);
         if(hdistance < distanceThreshold && vdistance <= 3)
         {
-            Debug.Log("Distance is lower than distance Threshold");
+            statusText.text = "REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEe!";
+            statusText.color = Color.red;
             gameObject.GetComponent<AIPath>().enabled = true;
             gameObject.GetComponent <AIPatrol> ().enabled = false;
         }
         else
         {
-            Debug.Log("Distance is higher than distance Threshold");
+            statusText.text = "Patrolling!";
+            statusText.color = Color.green;
             gameObject.GetComponent<AIPath>().enabled = false;
             gameObject.GetComponent<AIPatrol>().enabled = true;
         }
     }
     // Update is called once per frame
-    void Update()
-    {
-
-      
-    }
+    
 
 }
