@@ -43,10 +43,10 @@ GameObject:
   - component: {fileID: 1591251407185708062}
   - component: {fileID: 1591251407185708063}
   - component: {fileID: 1591251407185708060}
-  - component: {fileID: 1591251407185708061}
   - component: {fileID: 166790808}
   - component: {fileID: 166790809}
   - component: {fileID: 166790810}
+  - component: {fileID: 1591251407185708061}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -169,29 +169,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1591251407185708061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1591251407185708058}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b9b14d73c0891148a0e573a56f7a24f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 100
-  mustPatrol: 0
-  rb: {fileID: 1591251407185708060}
-  groundCheckPos: {fileID: 1591251406020052228}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  bodyCollider: {fileID: 1591251407185708063}
 --- !u!114 &166790808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,3 +253,31 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
+--- !u!114 &1591251407185708061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591251407185708058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9b14d73c0891148a0e573a56f7a24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 100
+  jumpForce: 4
+  jumpValue: 4
+  jumpTimer: 4
+  right: 1
+  extraJump: 0
+  groundCheck: {fileID: 1591251406020052228}
+  rb: {fileID: 1591251407185708060}
+  mustPatrol: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  bodyCollider: {fileID: 1591251407185708063}

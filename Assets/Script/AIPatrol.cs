@@ -40,6 +40,7 @@ public class AIPatrol : GeneralMovement
         if (mustTurn || bodyCollider.IsTouchingLayers(wallLayer))
         {
             Flip();
+            speed *= -1;
         }
         rb.velocity = new Vector2(speed * Time.fixedDeltaTime,rb.velocity.y);
 

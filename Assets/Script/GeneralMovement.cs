@@ -28,6 +28,7 @@ public abstract class GeneralMovement : MonoBehaviour
      */
     protected void Flip()
     {
+        Debug.Log(gameObject.name + " Flip!");
         right = !right;
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
