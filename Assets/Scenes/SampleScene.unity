@@ -2454,8 +2454,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 166790809, guid: 900330547b2cb8741a629ea60f981094, type: 3}
+      propertyPath: maxSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 166790809, guid: 900330547b2cb8741a629ea60f981094, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 166790809, guid: 900330547b2cb8741a629ea60f981094, type: 3}
+      propertyPath: orientation
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 166790809, guid: 900330547b2cb8741a629ea60f981094, type: 3}
       propertyPath: autoRepath.sensitivity
@@ -2519,6 +2527,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1591251407185708060, guid: 900330547b2cb8741a629ea60f981094, type: 3}
       propertyPath: m_GravityScale
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591251407185708061, guid: 900330547b2cb8741a629ea60f981094, type: 3}
+      propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1591251407185708061, guid: 900330547b2cb8741a629ea60f981094, type: 3}
