@@ -9,6 +9,8 @@ public class FlyingDecision : MonoBehaviour
     private Vector3 plPosition;
     private Vector3 goPosition;
     private float distance;
+    private float hdistance;
+    private float vdistance;
     [SerializeField]
     [Range(0,20)]
     public float distanceThreshold = 10;
@@ -23,7 +25,9 @@ public class FlyingDecision : MonoBehaviour
         plPosition = player.position;
         goPosition = transform.position;
         distance = Vector3.Distance(plPosition, goPosition);
-        if(distance < distanceThreshold)
+        hdistance = Mathf.Abs(plPosition.x - goPosition.x);
+        vdistance = Mathf.Abs(plPosition.y - goPosition.y);
+        if(hdistance < distanceThreshold && vdistance <= 3)
         {
             Debug.Log("Distance is lower than distance Threshold");
             gameObject.GetComponent<AIPath>().enabled = true;
