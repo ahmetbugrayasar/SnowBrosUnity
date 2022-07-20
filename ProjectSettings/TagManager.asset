@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - LeftDrop
+  - RightDrop
+  - LeftJump
+  - RightJump
   layers:
   - Default
   - TransparentFX
