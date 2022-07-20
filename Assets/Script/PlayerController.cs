@@ -62,6 +62,10 @@ public class PlayerController : GeneralMovement
             StartCoroutine(JumpStart());
 
         }
+        if (Input.GetKeyDown(KeyCode.Space) && isShooting == false)
+        {
+            StartCoroutine(Shoot());
+        }
     }
 
 }

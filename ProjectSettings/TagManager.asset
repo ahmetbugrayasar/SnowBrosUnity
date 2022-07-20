@@ -9,6 +9,10 @@ TagManager:
   - RightDrop
   - LeftJump
   - RightJump
+  - Wall
+  - Enemy
+  - Ranged
+  - Flying
   layers:
   - Default
   - TransparentFX

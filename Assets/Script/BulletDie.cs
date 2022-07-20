@@ -21,8 +21,16 @@ public class BulletDie : MonoBehaviour
         GameObject collisionGameObject = collision.gameObject;
 
 
-        if(collisionGameObject.name != "Player")
-        { Die(); }
+        if(gameObject.tag != collisionGameObject.tag &&
+            (collisionGameObject.tag == "Enemy" ||
+            collisionGameObject.tag == "Ranged" ||
+            collisionGameObject.tag == "Flying" )
+          )
+        { 
+            Die();
+            Destroy(collision.gameObject);
+        
+        }
     }
     IEnumerator Timer()
     {
@@ -35,7 +43,7 @@ public class BulletDie : MonoBehaviour
         {
             Instantiate(diePEffect, transform.position, Quaternion.identity);
         }
-
+        
         Destroy(gameObject);
     }
 }

@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 544474795012611894}
   - component: {fileID: 544474795012611889}
-  - component: {fileID: 544474795012611891}
   - component: {fileID: 544474795012611895}
   - component: {fileID: 544474795012611892}
+  - component: {fileID: -377412272356244597}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -87,27 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &544474795012611891
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544474795012611890}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!58 &544474795012611895
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -138,3 +117,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diePEffect: {fileID: 8870314232989112866, guid: f12efb6fc5eb6b54a81a474b7de1692e, type: 3}
   dieTime: 2
+--- !u!50 &-377412272356244597
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544474795012611890}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
