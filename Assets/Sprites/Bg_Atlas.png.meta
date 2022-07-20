@@ -4345,8 +4345,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 747
-        width: 544
-        height: 159
+        width: 399
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8403,7 +8403,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bg_Atlas_375: -1962971565
+      Bg_Atlas_86: -487280474
       Bg_Atlas_382: 1058803679
       Bg_Atlas_96: -887093388
       Bg_Atlas_11: -722936651
@@ -8437,8 +8437,8 @@ TextureImporter:
       Bg_Atlas_223: 134537323
       Bg_Atlas_302: 1431836151
       Bg_Atlas_326: 544858
-      Bg_Atlas_115: 1030255681
       Bg_Atlas_346: -1784600464
+      Bg_Atlas_115: 1030255681
       Bg_Atlas_57: -1845618675
       Bg_Atlas_122: 74334161
       Bg_Atlas_47: -900078823
@@ -8797,7 +8797,7 @@ TextureImporter:
       Bg_Atlas_116: 980659554
       Bg_Atlas_231: -1507066127
       Bg_Atlas_224: -1819751276
-      Bg_Atlas_86: -487280474
+      Bg_Atlas_375: -1962971565
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
