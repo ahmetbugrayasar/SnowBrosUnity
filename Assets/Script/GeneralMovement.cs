@@ -82,6 +82,7 @@ public abstract class GeneralMovement : MonoBehaviour
         newBullet.transform.localScale = new Vector2(newBullet.transform.localScale.x * direction(), newBullet.transform.localScale.y);
         yield return new WaitForSeconds(shootTimer);
         isShooting = false;
+
         if (right)
         {
             speed = 100;

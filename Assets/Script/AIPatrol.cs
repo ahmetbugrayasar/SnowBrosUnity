@@ -8,8 +8,8 @@ public class AIPatrol : GeneralMovement
     [HideInInspector]
     public bool mustPatrol;
     private bool mustTurn;
+    int counter = 0;
 
-    
     public LayerMask groundLayer;
     public LayerMask wallLayer;
     public Collider2D bodyCollider;
@@ -33,6 +33,7 @@ public class AIPatrol : GeneralMovement
         if(mustPatrol)
         {
             Patrol();
+            Debug.Log("I've touched the wall" + counter + " times.");
         }
         else
         {
@@ -42,13 +43,16 @@ public class AIPatrol : GeneralMovement
 
     void Patrol()
     {
+        
         if (bodyCollider.IsTouchingLayers(wallLayer))
         {
+            counter +=1;
             Flip();
             speed *= -1;
+            
         }
         rb.velocity = new Vector2(speed * Time.fixedDeltaTime,rb.velocity.y);
-
+        
     }
    
     private void OnTriggerEnter2D(Collider2D collision)

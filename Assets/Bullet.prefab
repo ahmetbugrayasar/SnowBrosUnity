@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diePEffect: {fileID: 8870314232989112866, guid: f12efb6fc5eb6b54a81a474b7de1692e, type: 3}
-  dieTime: 2
+  dieTime: 1
 --- !u!50 &-377412272356244597
 Rigidbody2D:
   serializedVersion: 4
@@ -132,7 +132,7 @@ Rigidbody2D:
   m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
