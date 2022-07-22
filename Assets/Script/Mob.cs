@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /*This script was written by Ahmet Buðra Yaþar for Lost Tales' Snowbros Project. 21.07.2022*/
+
 /*
  * Mobs in SnowBros delay their actions for various miliseconds. So each mob entity will have an IMob interface.
  *
@@ -40,15 +41,6 @@ public abstract class Mob : Entity
     public bool dropLeft,dropRight,
                 jumpLeft,jumpRight;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //NumericalValue for the movement decision of all Mobs.
+    public int decisionValue;
 }

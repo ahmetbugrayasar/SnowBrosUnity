@@ -13,7 +13,7 @@ public interface IShooter
     IEnumerator Shoot();
 }
 
-public abstract class Ranged : Entity
+public abstract class Ranged : Mob
 {
 
     //How fast the projectile will traverse
@@ -36,19 +36,14 @@ public abstract class Ranged : Entity
     //The prefab of the projectile
     [Tooltip("Choose a prefab as the projectile")]
     public GameObject projectile;
-    public Projectile projectile_temp;
 
-    //String array that keeps the tags of Entity's enemies.
-    public List<string> enemies;
+    public Projectile p_projectile;
+    private void Start()
+    {
+        
+    }
+
+
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

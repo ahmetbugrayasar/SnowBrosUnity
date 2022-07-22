@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 544474795012611895}
   - component: {fileID: 544474795012611892}
   - component: {fileID: -377412272356244597}
+  - component: {fileID: -8737914760029168605}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -110,7 +111,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544474795012611890}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: baf36e2b3452677409c0378d2b662e05, type: 3}
   m_Name: 
@@ -138,3 +139,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-8737914760029168605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544474795012611890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc9228b23b70d4042b9ca9a17562c1fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GO: {fileID: 544474795012611890}
+  diePEffect: {fileID: 8870314232989112866, guid: f12efb6fc5eb6b54a81a474b7de1692e, type: 3}
+  dieTime: 2
+  type: 0

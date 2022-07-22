@@ -46,7 +46,7 @@ public abstract class Entity : MonoBehaviour
 {
     //Movement speed of entity, Horizontal change
     [SerializeField]
-    [Range(0f,10f)]
+    [Range(0f,100f)]
     public float speed;
 
     //Jump Force of entity, Vertical change

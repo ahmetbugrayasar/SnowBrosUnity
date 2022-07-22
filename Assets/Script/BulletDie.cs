@@ -6,7 +6,7 @@ public class BulletDie : MonoBehaviour
 {
     public GameObject diePEffect;
     public float dieTime;
-    public int bulletType;
+   
     void Start()
     {
         StartCoroutine(Timer());
